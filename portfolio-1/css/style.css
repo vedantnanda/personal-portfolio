@@ -142,7 +142,7 @@ body {
     }
 }
 
-#about, #skills, #blogs {
+#about, #skills, #blogs, #testimonials {
     height: auto !important;
 }
 
@@ -332,6 +332,10 @@ span.title {
     top: 90% !important;
 }
 
+#testimonials .title{
+    top: 90% !important;
+}
+
 #contact .title {
     top: 65% !important;
 }
@@ -375,7 +379,7 @@ span.title {
 }
 
 
-#about, #skills, #contact, #blogs {
+#about, #skills, #contact, #blogs, #testimonials {
     position: relative;
     padding-left:  12rem;
     padding-right:  12rem;
@@ -488,11 +492,23 @@ button {
     font-family: 'Poppins', sans-serif !important;
 }
 
+#testimonials h4, #testimonials .duration {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 #about h6 {
     font-family: 'Heebo', sans-serif !important;
 }
 
+#testimonials h6 {
+    font-family: 'Heebo', sans-serif !important;
+}
+
 #about .duration, #blogs .pub-date {
+    opacity: 0.5;
+}
+
+#testimonials .duration, #blogs .pub-date {
     opacity: 0.5;
 }
 
@@ -505,7 +521,18 @@ button {
     font-size: 1.1rem;
 }
 
+#testimonials .description, #blogs .description {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.1rem;
+}
+
 #about .subtitle {
+    position: relative;
+    z-index: 100000;
+    transform: translate(30px, 30px);
+}
+
+#testimonials .subtitle {
     position: relative;
     z-index: 100000;
     transform: translate(30px, 30px);
@@ -520,6 +547,9 @@ button {
     margin-bottom: 15px;
 }
 
+#testimonials .subtitle{
+    margin-bottom: 10px;
+}
 
 .skill {
     margin-bottom: 20px;
@@ -743,7 +773,7 @@ button {
         padding-bottom: 0.5em;
     }
 
-    #about, #skills, #experience, #contact, #blogs {
+    #about, #skills, #experience, #contact, #blogs, #testimonials {
         position: relative;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -801,7 +831,7 @@ button {
     }
 
 
-    #about .subtitle, #blogs .subtitle, #contact .subtitle {
+    #about .subtitle, #blogs .subtitle, #contact .subtitle, #testimonials .subtitle {
         font-size: 2.5rem !important;
     }
 
@@ -828,7 +858,7 @@ button {
         margin-right: 20px;
     }
 
-    #about, #skills, #blogs {
+    #about, #skills, #blogs, #testimonials {
         height: auto !important;
     }
 
