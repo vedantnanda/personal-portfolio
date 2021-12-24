@@ -121,6 +121,7 @@ body {
     top: 0;
     width: 16vmin;
 }
+
 .loader:after {
     animation: spin 3s infinite linear;
     border: solid 2vmin transparent;
