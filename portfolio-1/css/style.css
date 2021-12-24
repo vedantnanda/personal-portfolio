@@ -340,6 +340,12 @@ span.title {
     top: 85% !important;
 }
 
+@media screen and (min-width: 1400px) {
+  #contact .title {
+    top: 65% !important;
+}
+}
+
 #blogs .title {
     top: 100% !important;
 }
