@@ -50,7 +50,6 @@ $(function () {
     }
 
     $(window).on('load', function () {
-        window.history.forward(1);
         $('.loader-wrapper').fadeOut(300);
     });
 
