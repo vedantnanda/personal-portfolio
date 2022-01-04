@@ -52,7 +52,7 @@ $(function () {
     $(window).on('load', function () {
         $('.loader-wrapper').fadeOut(300);
     });
-
+    window.history.forward(1);
     $("#menu-toggle").on(
         'click',
         function (e) {
