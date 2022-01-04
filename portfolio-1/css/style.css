@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
-#test-box {
-background-color: yellow;
-padding: 10px;
+@media screen and (max-width:580px) {
+  .logotext {
+        width: 85% !important; 
+    }
+  .logoicon{
+      width: 15% !important;
+  }
 }
 
 h1:lang(ta), h2:lang(ta), h3:lang(ta), h4:lang(ta), h5:lang(ta), h6:lang(ta), .navbar-brand:lang(ta) {
