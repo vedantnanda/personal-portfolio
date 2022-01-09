@@ -2,30 +2,6 @@ let didScroll = false;
 const changeHeaderOn = 200;
 
 const ids = ['#home', '#about', '#skills', '#blogs', '#contact'];
-const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
-
-let mediumArticles = [];
-
-const getArticleDOM = function (article) {
-    const content = article.content.replace(/<\/?[^>]+>/ig, " ").substring(0, 100);
-    const articleLink = article.link.split('?')[0];
-    const date = new Date(article.pubDate.replace(/-/g, "/"));
-
-    const pubDate = `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-
-    return `<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
-                <a href="${articleLink}" target="_blank">
-                    <img src="${article.thumbnail}" alt="${article.title}">
-                    <div class="content">
-                        <h5>${article.title}</h5>
-                        <p class="pub-date">${pubDate}</p>
-                        <p class="description">${content}</p>
-                    </div>
-                </a>
-            </div>`;
-}
 
 $(function () {
     $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
@@ -52,7 +28,7 @@ $(function () {
     $(window).on('load', function () {
         $('.loader-wrapper').fadeOut(300);
     });
-    window.history.forward(1);
+
     $("#menu-toggle").on(
         'click',
         function (e) {
