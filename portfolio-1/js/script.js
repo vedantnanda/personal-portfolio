@@ -30,9 +30,10 @@ $(function () {
     });
 
     setInterval(function (timestamp) {
+        $('.loader-wrapper').fade(400);
         $('.loader-wrapper').css('z-index', -1)
         document.getElementsByClassName('loader-wrapper')[0].innerHTML = ''
-    }, 1200);
+    }, 600);
 
     $("#menu-toggle").on(
         'click',
