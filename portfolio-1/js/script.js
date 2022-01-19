@@ -26,7 +26,7 @@ $(function () {
     }
 
     $(window).on('load', function () {
-        $('.loader-wrapper').fadeOut(300);
+        $('.loader-wrapper').hide(1000);
     });
 
     $("#menu-toggle").on(
