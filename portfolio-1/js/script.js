@@ -27,6 +27,10 @@ $(function () {
 
     $(window).on('load', function () {
         $('.loader-wrapper').hide(1000);
+        setInterval(function (timestamp) {
+            $('.loader-wrapper').css('z-index', -1)
+            document.getElementsByClassName('loader-wrapper')[0].innerHTML = ''
+        }, 1200);
     });
 
     $("#menu-toggle").on(
