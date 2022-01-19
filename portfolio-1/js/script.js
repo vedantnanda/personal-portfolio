@@ -26,14 +26,14 @@ $(function () {
     }
 
     $(window).on('load', function () {
-        $('.loader-wrapper').hide(1000);
+        $('.loader-wrapper').fade(300);
     });
 
     setInterval(function (timestamp) {
-        $('.loader-wrapper').fade(400);
+        // $('.loader-wrapper').fade(400);
         $('.loader-wrapper').css('z-index', -1)
         document.getElementsByClassName('loader-wrapper')[0].innerHTML = ''
-    }, 600);
+    }, 450);
 
     $("#menu-toggle").on(
         'click',
